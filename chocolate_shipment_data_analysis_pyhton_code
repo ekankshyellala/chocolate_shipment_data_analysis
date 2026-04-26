@@ -1,0 +1,35 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+#loaded data
+def load_data(path):
+    try:
+        df = pd.read_csv(path)
+        print("loaded")
+        return df
+    except Exception as e:
+        print("error")
+        return  None
+
+
+#analysed data    
+def analyse_data(df):
+    print(df.describe())
+    df.info()
+    print(df.isnull().sum())
+
+        
+def main():
+    path = "C://Users//ekank//OneDrive//Documents//sample-chocolate-shipments-data-all-Apr-2025.csv"
+    df = load_data(path)
+    if df is not None:
+        analyse_data(df)
+
+
+if __name__ == "__main__":
+     main()
+    
+    
+        main()
