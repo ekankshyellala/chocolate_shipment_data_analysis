@@ -24,3 +24,4 @@ After this Python EDA, the following visuals will be created in Power BI:
 4. KPI Cards: Major metrics - Total Amount, Total Boxes Shipped, Total Profit
 5. Product Performance - Treemap: Top Products by Revenue
 6. Sales Team - Table Chart: Top 5 Salespersons by Performance
+Dataset source : Kaggle
